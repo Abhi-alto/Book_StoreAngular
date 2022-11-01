@@ -1,0 +1,28 @@
+<div class="outerDiv">
+    <div class="innerDiv">
+        <div class="left">
+            <span class="Img">
+                <img src="../../../assets/book_store.png " style="width:70% ">
+            </span>
+            <span class="txt"><b>Online Booking Shopping</b></span>
+        </div>
+        <div class="right">
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="top">
+                <a mat-button routerLink="/login" target="_self" style=" text-decoration: none; color:black;"><b> LOGIN </b></a>
+                <a mat-button routerLink="/signup" target="_self" style="text-decoration: none; opacity: 0.56;"> <b>SIGNUP </b></a>
+            </div>
+
+            <div class="Email" >
+                <div class="smallTxt">Email</div>
+                <input type="text" name="Email" style="width:100%" formControlName="Email">
+            </div>
+            <div class="Password">
+                <div class="smallTxt">Password</div>
+                 <input type="password" name="Password" style="width:100%"formControlName="Password">
+            </div>
+            <button mat-flat-button color="black" style="background:rgb(114, 26, 26);width: 104%">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>

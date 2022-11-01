@@ -1,0 +1,38 @@
+<!-- <p>register works!</p> -->
+<div class="outerDiv">
+    <div class="innerDiv">
+        <div class="left">
+            <span class="Img">
+                <img src="../../../assets/book_store.png " style="width:70% ">
+            </span>
+            <span class="txt"><b>Online Booking Shopping</b></span>
+        </div>
+        <div class="right">
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                <div class="top">
+                    <a mat-button routerLink="/login"  style="text-decoration: none;opacity: 0.56;"><b> LOGIN </b></a>
+                    <a mat-button routerLink="/login"  style="text-decoration: none;color:black;"><b> SIGNUP</b></a>
+                </div>
+                <div class="FullName">
+                    <div class="smallTxt">Full Name</div>
+                    <input type="text" name="FullName" style="width:100%" formControlName="Name">
+                </div>
+                <div class="Email">
+                    <span class="smallTxt">Email</span>
+                    <input type="text" name="Email" style="width:100%" formControlName="Email">
+                </div>
+                <div class="Password">
+                    <span class="smallTxt">Password</span>
+                    <input type="text" name="Password" style="width:100%" formControlName="Password">
+                </div>
+                <div class="MobileNumber">
+                    <span class="smallTxt">Mobile Number</span>
+                    <input type="text" name="MobileNumber" style="width:100%" formControlName="Phone_Num">
+                </div>
+                <div class="submit">
+                    <button mat-flat-button color="white" style="background:rgb(114, 26, 26);width: 104%;">Signup</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

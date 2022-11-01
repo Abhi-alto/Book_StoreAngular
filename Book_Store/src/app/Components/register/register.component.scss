@@ -1,0 +1,105 @@
+.outerDiv
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //width: 100%;
+     height: 97vh;
+    //background-color: rgb(227, 227, 227);
+    background: rgb(157, 157, 157);
+    font-family:sans-serif;
+    border: 1px solid red;
+    margin: 0px;
+    padding: 0px;
+}
+.innerDiv
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0px;
+    border-radius: 21px;
+    width: 624px;
+    height: 391px;
+    background: #F5F5F5;
+}
+.left
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid yellow;
+    height:100%;
+    border-bottom-left-radius: 21px;
+    border-top-left-radius: 21px;
+    width:60%;
+}
+.Img
+{
+    border:1px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:75%;
+    background-color: transparent;
+    border-radius: 50%;
+}
+.txt
+{
+    font-family:sans-serif;
+    color: red;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 10;
+}
+.right
+{
+    display:flex;
+    flex-direction: column;
+    border: 1px solid green;
+    height:400px;
+    width:40%;
+    border-radius: 6px;
+    background-color: white;
+    padding: 16px 46px;
+}
+.top
+{
+    display:flex;
+    justify-content: space-between;
+    .mat-flat-button
+    {
+        background-color: aqua;
+    }
+    padding-bottom: 40px;
+    font-size: larger;
+    font-weight: 300;
+
+}
+.top:hover{
+    font-weight: 700;
+}
+.FullName
+{
+   padding-bottom: 20px;
+}
+.Email
+{
+   padding-bottom: 20px;
+}
+.Password
+{
+   padding-bottom: 20px;
+}
+.MobileNumber
+{
+   padding-bottom: 20px;
+}
+.smallTxt
+{
+    font-size:x-small;
+}
+.button.mat-flat-button
+{
+    width: 100%;
+}
