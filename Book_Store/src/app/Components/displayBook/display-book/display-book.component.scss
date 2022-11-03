@@ -1,0 +1,41 @@
+.outer
+{
+    border:1px solid #F5F5F5;
+    height: 42vh;
+    width: 20%;
+
+}
+.outer:hover
+{
+        box-shadow:1px 1px 6px 0.8px grey;
+}
+.bookImg
+{
+    background-color:#F5F5F5;
+    height:70%;
+}
+.bottom
+{
+    padding:10px;
+}
+.author
+{
+    opacity:0.95;
+    font-size: small;
+    color: gray;
+}
+.Rating
+{
+    border:1px solid #388E3C;
+    width: 20%;
+    background-color:#388E3C ;
+    display: flex;
+    flex-direction: row;
+}
+.ratingRow
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
