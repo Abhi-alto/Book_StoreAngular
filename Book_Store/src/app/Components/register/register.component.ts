@@ -15,7 +15,7 @@ export class RegisterComponent implements OnInit {
     Name:['',Validators.required],
     Email: ['', [Validators.required, Validators.email]],
     Password:['',[Validators.required,Validators.minLength(8)]],
-    Phone_Num:['',Validators.required],
+    Phone_Num:['',Validators.required]
   })
 }
   onSubmit()
@@ -30,7 +30,7 @@ export class RegisterComponent implements OnInit {
         name:this.registerForm.value.Name,
         email: this.registerForm.value.Email,
         password: this.registerForm.value.Password,
-        phone_Num: this.registerForm.value.Phone_Num
+        phone_Num: parseInt(this.registerForm.value.Phone_Num)
       }
       this.User.register(data).subscribe((result:any)=>
       {

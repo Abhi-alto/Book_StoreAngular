@@ -24,6 +24,15 @@ export class UserService {
         'Content-Type':'application/json'
       })
     }
-    return this.http.postService('https://localhost:44319/User/LoginUser',data,false,header)
+    return this.http.postService('https://localhost:44378/User/LoginUser',data,false,header)
+  }
+  forgetPassword(data:any)
+  {
+    let header={
+      header:new HttpHeaders({
+        'Content-Type':'application/json'
+      })
+    }
+    return this.http.postService(`https://localhost:44378/User/ForgetPassword/${data.email}`,data,false,header)
   }
 }

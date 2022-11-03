@@ -31,13 +31,13 @@ export class LoginComponent implements OnInit {
         email: this.loginForm.value.Email,
         password: this.loginForm.value.Password
       }
-      this.user.login(data).subscribe((result:any)=>
+      this.user.login(data).subscribe((response:any)=>
       {
-          console.log(result.token)
-          localStorage.setItem('token' , result.token)
+          console.log(response.token+"Token Printed")
+          localStorage.setItem('token' , response.token)
       })
     }
-    
+ 
     else
     {
       console.log("invalid data",this.loginForm.value);

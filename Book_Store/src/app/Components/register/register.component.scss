@@ -6,9 +6,9 @@
     //width: 100%;
      height: 97vh;
     //background-color: rgb(227, 227, 227);
-    background: rgb(157, 157, 157);
+    background: rgb(204, 201, 201);
     font-family:sans-serif;
-    border: 1px solid red;
+    // border: 1px solid red;
     margin: 0px;
     padding: 0px;
 }
@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border:1px solid yellow;
+    // border:1px solid yellow;
     height:100%;
     border-bottom-left-radius: 21px;
     border-top-left-radius: 21px;
@@ -36,7 +36,7 @@
 }
 .Img
 {
-    border:1px solid green;
+    //border:1px solid green;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +47,7 @@
 .txt
 {
     font-family:sans-serif;
-    color: red;
+    // color: red;
     font-weight: bold;
     text-transform: uppercase;
     opacity: 10;
@@ -56,44 +56,45 @@
 {
     display:flex;
     flex-direction: column;
-    border: 1px solid green;
+    //border: 1px solid green;
     height:400px;
     width:40%;
     border-radius: 6px;
     background-color: white;
     padding: 16px 46px;
+    box-shadow:1px 1px 6px 0.8px grey;
 }
 .top
 {
     display:flex;
     justify-content: space-between;
-    .mat-flat-button
-    {
-        background-color: aqua;
-    }
     padding-bottom: 40px;
+    padding-top: 20px;
     font-size: larger;
     font-weight: 300;
-
 }
 .top:hover{
     font-weight: 700;
 }
 .FullName
 {
-   padding-bottom: 20px;
+   padding-bottom: 15px;
 }
 .Email
 {
-   padding-bottom: 20px;
+   padding-bottom: 15px;
+}
+.Full
+{
+    outline-color:rgb(87, 6, 6);
 }
 .Password
 {
-   padding-bottom: 20px;
+   padding-bottom: 15px;
 }
 .MobileNumber
 {
-   padding-bottom: 20px;
+   padding-bottom: 5px;
 }
 .smallTxt
 {
@@ -102,4 +103,12 @@
 .button.mat-flat-button
 {
     width: 100%;
+}
+.Submit
+{
+    color: #F5F5F5;
+}
+.submit
+{
+    padding-top: 20px;
 }

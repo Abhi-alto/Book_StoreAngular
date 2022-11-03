@@ -8,21 +8,38 @@
         </div>
         <div class="right">
             <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-            <div class="top">
-                <a mat-button routerLink="/login" target="_self" style=" text-decoration: none; color:black;"><b> LOGIN </b></a>
-                <a mat-button routerLink="/signup" target="_self" style="text-decoration: none; opacity: 0.56;"> <b>SIGNUP </b></a>
-            </div>
+                <div class="top">
+                    <a mat-button routerLink="/login" target="_self" style=" text-decoration: none; color:black;"><b>
+                            LOGIN </b></a>
+                    <a mat-button routerLink="/signup" target="_self" style="text-decoration: none; opacity: 0.56;">
+                        <b>SIGNUP </b></a>
+                </div>
 
-            <div class="Email" >
-                <div class="smallTxt">Email</div>
-                <input type="text" name="Email" style="width:100%" formControlName="Email">
-            </div>
-            <div class="Password">
-                <div class="smallTxt">Password</div>
-                 <input type="password" name="Password" style="width:100%"formControlName="Password">
-            </div>
-            <button mat-flat-button color="black" style="background:rgb(114, 26, 26);width: 104%">Submit</button>
+                <div class="Email">
+                    <span class="smallTxt">Email id</span>
+                    <input type="text" class="email" style="width:100% ; height: 25px;" formControlName="Email">
+                </div>
+                <div class="Password">
+                    <div class="smallTxt">Password</div>
+                    <input type="password" style="width:100% ; height: 25px;" formControlName="Password">
+                </div>
+                <div class="ForgetPass">
+                    <a mat-button routerLink="/forgotPassword" target="_self" style="text-decoration: none; opacity: 0.56;">
+                        <b>Forgot Password? </b></a>
+                </div>
+                <button mat-flat-button class="Submit" color="black"
+                    style="background:#A03037;width: 104%; height:30px; border-radius: 3px;border:none;" routerLink="/dashboard">Login</button>
             </form>
+            <div class="OR">
+                <hr >
+                <p>OR</p>
+                <hr>
+            </div>
+            <div class="bottom">
+                <button mat-flat-button class="facebook" style="background-color: #4266B2; width: 48%;height:30px; border-radius: 3px;border:none;">Facebook</button>
+                <button mat-flat-button class="google" style=" background-color:white;width: 48%;height:30px; border-radius: 3px;border:none;">Google</button>
+            </div>
         </div>
+
     </div>
 </div>

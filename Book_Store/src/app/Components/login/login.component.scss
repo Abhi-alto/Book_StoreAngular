@@ -8,7 +8,7 @@
     //background-color: rgb(227, 227, 227);
     background: rgb(157, 157, 157);
     font-family:sans-serif;
-    border: 1px solid red;
+   // border: 1px solid red;
     margin: 0px;
     padding: 0px;
 }
@@ -28,7 +28,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border:1px solid yellow;
+ //   border:1px solid yellow;
     height:100%;
     border-bottom-left-radius: 21px;
     border-top-left-radius: 21px;
@@ -39,7 +39,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border:1px solid green;
+    //border:1px solid green;
     width: 100%;
     height:75%;
     background-color: transparent;
@@ -48,7 +48,7 @@
 .txt
 {
     font-family:sans-serif;
-    color: red;
+    //color: red;
     font-weight: bold;
     text-transform: uppercase;
     opacity: 10;
@@ -57,7 +57,7 @@
 {
     display:flex;
     flex-direction: column;
-    border: 1px solid green;
+    //border: 1px solid green;
     height:400px;
     width:40%;
     border-radius: 6px;
@@ -68,10 +68,8 @@
 {
     display:flex;
     justify-content: space-between;
-    .mat-flat-button
-    {
-        background-color: aqua;
-    }
+    padding-top: 20px;
+
     padding-bottom: 40px;
     font-size: larger;
     font-weight: 300;
@@ -85,15 +83,49 @@
 }
 .Password
 {
-   padding-bottom: 20px;
+  padding: 2px;
    width: 100%;
+}
+.ForgetPass
+{
+    display: flex;
+    justify-content: right;
+    font-size: x-small;
+    //border: 1px solid yellow;
+    width: 104%;
+    padding-bottom: 30px;
 }
 .smallTxt
 {
     font-size:x-small;
 }
-.submit button
+.Submit
 {
-    width:100%;
+    color: #F5F5F5;
 }
+.OR
+{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+.bottom
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.facebook
+{
+    color: #F5F5F5;
+    .hover
+    {
+        box-shadow: 5px;
+    }
+}
+.google:hover{
+    box-shadow: 5px;
+}
+
+
 
