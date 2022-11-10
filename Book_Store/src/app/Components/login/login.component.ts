@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { UserService } from 'src/app/Services/UserService/user.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { UserService } from 'src/app/Services/UserService/user.service';
 export class LoginComponent implements OnInit {
 
   loginForm !: FormGroup;
-  constructor(private fb:FormBuilder,private user:UserService) { }
+  constructor(private fb:FormBuilder,private user:UserService, private router: Router) { }
 
   ngOnInit(): void
   {
@@ -35,6 +36,7 @@ export class LoginComponent implements OnInit {
       {
           console.log(response.token+"Token Printed")
           localStorage.setItem('token' , response.token)
+          this.router.navigate(["/dashboard/books"]);
       })
     }
  

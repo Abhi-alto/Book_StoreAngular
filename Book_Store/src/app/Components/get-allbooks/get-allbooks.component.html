@@ -1,0 +1,17 @@
+<div class="header" style="padding-top:12px;" >
+    <span style="font-size:x-large;padding-left: 14%;padding-right: 60vw;"><b>Books</b></span>
+    <span>
+        <button mat-button [matMenuTriggerFor]="menu" style="width:10vw; height:5vh; padding-right: 10px; background-color: rgb(255, 255, 255);"> Sort by relevance </button>
+        <mat-menu #menu="matMenu" >
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+        </mat-menu>
+    </span>
+</div>
+<div class="display">
+    <app-display-book [childMessage]="bookList" (messageEvent)="receiveMessage($event)"></app-display-book>
+    <div class="Footer">
+        Copyright 2020, Bookstore Private Limited.All Rights Reserved
+    </div>
+</div>
+

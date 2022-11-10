@@ -1,0 +1,52 @@
+<div class="outer">
+    <div class="left">
+        <a routerLink="/dashboard/books" style="font-size:small;opacity:0.5; padding-bottom: 20px;">Home</a>
+        <div class="BookColumn">
+            <span class="smallBox">
+                <img src="{{messageBook.bookImg}}" style="height:100%">
+            </span>
+            <div style="display:flex;flex-direction: column;">
+                <span class="BookBox">
+                    <img src="{{messageBook.bookImg}}" style="height:100%;">
+                </span>
+                <div style="padding-top:15px;display:flex;">
+                    <button mat-raised-button class="b1">Add To Bag</button>
+                    <button mat-raised-button class="b2">Wish List</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right">
+        <div class="title">{{messageBook.bookName}}</div>
+        <div class="author">by {{messageBook.authorName}}</div>
+        <div class="ratingRow">
+            <div class="Rating">
+                <span class="rating"
+                    style="padding-bottom:5px; padding-left:3px; font-size:small;">{{messageBook.rating}}</span>
+                <img src="../../../../assets/star_FILL1_wght300_GRAD-25_opsz241212.png"
+                    style="padding-bottom:1px;; padding-right: 5px;color:#ffffff ;">
+            </div>
+            <span class="rating_count"
+                style=" padding-bottom:5px;font-size:smaller;padding-left: 10px;">({{messageBook.rating_Count}})</span>
+        </div>
+        <div class="Price" style="display:flex; ">
+            <div style="font-size: xx-large; padding-right: 3px;">Rs.{{messageBook.discountedPrice}}</div>
+            <div style="font-size: medium;opacity: 0.5;"><s>Rs.{{messageBook.actualPrice}}</s></div>
+        </div>
+        <hr>
+        <div style="padding-top:10px;padding-bottom:10px">
+        <span style="font-size: medium; opacity:0.5;">Book Details</span>
+        <div style="font-size: smaller; opacity:0.5;">{{messageBook.bookDescription}}</div>
+    </div>
+        <hr>
+
+        <div style="font-size:larger">Customer Feedback</div>
+        <div class="review">
+            <div>Overall Rating</div>
+            <div>Stars</div>
+            <div>review</div>
+            <div>Submit</div>
+        </div>
+
+    </div>
+</div>

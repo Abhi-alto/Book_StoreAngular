@@ -1,18 +1,25 @@
-<div class="outer">
-    <div class="bookImg">IMG</div>
-    <div class="bottom">
-        <div class="title">Title</div>
-        <div class="author">by Author</div>
-        <div class="ratingRow">
-            <div class="Rating">
-                <span class="rating">4.5</span>
-                <img  src="../../../../assets/star_FILL0_wght300_GRAD-25_opsz20.svg" style="width:2vw">
-            </div>
-            <span class="rating_count">(20)</span>
+<div class="loop">
+    <div class="outer" *ngFor="let book of childMessage">
+        <div class="bookImg">
+            <img src="{{book.bookImg}}" (click)="view(book)" style="height:34vh">
         </div>
-        <div>
-            <span class="discountedPrice">2000</span>
-            <span class="actualPrice">1000</span>
+        <div class="bottom" (click)="view(book)">
+            <div class="title" style="padding-bottom:6px">{{book.bookName}}</div>
+            <div class="author" style="padding-bottom:5px;font-size:x-small;">by {{book.authorName}}</div>
+            <div class="ratingRow">
+                <div class="Rating">
+                    <span class="rating"
+                        style="padding-bottom:5px; padding-left:3px; font-size:smaller;">{{book.rating}}</span>
+                    <img src="../../../../assets/star_FILL1_wght100_GRAD0_opsz24.svg"
+                        style="padding-bottom:1px;width:1vw; padding-right: 5px;color:#ffffff ;">
+                </div>
+                <span class="rating_count"
+                    style=" padding-bottom:5px;font-size:smaller;padding-left: 2px;">({{book.rating_Count}})</span>
+            </div>
+            <div>
+                <span class="discountedPrice" style=" font-size:small;">Rs.{{book.discountedPrice}}</span>
+                <span class="actualPrice" style=" font-size:x-small;"><s>Rs.{{book.actualPrice}}</s></span>
+            </div>
         </div>
     </div>
 </div>

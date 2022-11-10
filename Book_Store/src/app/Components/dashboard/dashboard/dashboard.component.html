@@ -1,29 +1,37 @@
 <div class="outerDiv">
     <div class="header">
-            <span class="Img">
-                <img src="../../../../assets/book.png " class="IMg" style="width:15% ; padding-right: 10px;">
-            </span>
-            <span class="BookStore"><b>Bookstore</b></span>
+        <span class="Img">
+            <img src="../../../../assets/book.png " class="IMg" style="width:15% ; padding-right: 10px;">
+        </span>
+        <span class="BookStore"><b>Bookstore</b></span>
         <div class="Search">
             <button mat-icon-button aria-label="Example icon button with a home icon"
                 style="background-color:rgb(255, 255, 255); border:none;">
                 <img src="../../../../assets/search_FILL0_wght400_GRAD0_opsz24.png">
             </button>
-            <input  type="text" class="search" aria-label="Search" placeholder="Search" role="combobox" value="">
+            <input type="text" class="search" aria-label="Search" placeholder="Search">
         </div>
         <div class="Profile">
-            <button mat-raised-button style="width:100%; background-color: #A03037; border: 1px solid #5e1e22;"> 
-                <img src="../../../../assets/person_FILL0_wght400_GRAD0_opsz24.png" style="padding: 5px;
+            <button  [matMenuTriggerFor]="menu" style="height: 10vh; width:5vw;background-color:#A03037;border:1px solid #571b1f">
+                <img src="../../../../assets/person_FILL0_wght400_GRAD0_opsz24.png" style="padding-top: 0px;
                 background-color:#A03037">
-                <p style="margin:-8px">Profile</p>
+                <p style="margin: -3px;height: 0px;padding-bottom: 10px;">Profile</p>
             </button>
+            <mat-menu #menu="matMenu" xPosition="after">
+                <button mat-menu-item>Orders</button>
+                <button mat-menu-item>Logout</button>
+            </mat-menu>
         </div>
         <div class="Cart">
-            <button mat-raised-button style="width:100%; background-color: #A03037; border: none;"> 
-                <img src="../../../../assets/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg" style="padding: 5px;background-color:#A03037"></button>
-                <p style="margin:-8px; padding-left: 12px;">Cart</p>
+            <button mat-raised-button style="width:100%; background-color: #A03037; border: none;">
+                <img src="../../../../assets/shopping_cart_FILL0_wght400_GRAD0_opsz24.svg"
+                    style="padding: 5px;background-color:#A03037"></button>
+            <p style="margin:-8px; padding-left: 20px;padding-bottom: 5px;padding-top: 0px; font-size: small;">Cart</p>
         </div>
     </div>
     <div class="bottomDiv">
+        <router-outlet></router-outlet>
+
     </div>
+
 </div>

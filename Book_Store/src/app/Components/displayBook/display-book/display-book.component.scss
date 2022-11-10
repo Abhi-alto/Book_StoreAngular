@@ -1,9 +1,20 @@
+.loop
+{
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display:flex;
+    flex-wrap: wrap;
+    // border: 1px solid green;
+}
+
 .outer
 {
+    
     border:1px solid #F5F5F5;
-    height: 42vh;
-    width: 20%;
-
+    height: 50vh;
+    width: 23%;
+    margin:10px;
 }
 .outer:hover
 {
@@ -11,12 +22,15 @@
 }
 .bookImg
 {
-    background-color:#F5F5F5;
+    background-color:#eae5e5;
     height:70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .bottom
 {
-    padding:10px;
+    padding:15px;
 }
 .author
 {
@@ -28,14 +42,32 @@
 {
     border:1px solid #388E3C;
     width: 20%;
+    height: 15px;
     background-color:#388E3C ;
     display: flex;
     flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    color: #F5F5F5;
 }
 .ratingRow
 {
     display: flex;
     flex-direction: row;
+}
+.discountedPrice
+{
+    font: bold;
+    font-weight: 800;
+    padding-right: 4px;
+}
+.actualPrice
+{
+    opacity: 0.53;
+}
+.rating_count
+{
+    opacity:0.53;
 }
 
 

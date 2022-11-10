@@ -1,0 +1,107 @@
+.outer
+{
+    border:1px solid rgb(128, 0, 0);
+    height: 100%;
+    display: flex;
+}
+.left
+{
+    display: flex;
+    flex-direction: column;
+    border:1px solid green;
+    width:40%;
+    padding-left: 13%;
+    padding-top:20px;
+    padding-right: 2px;
+}
+.BookBox
+{
+    border:1px solid grey;
+    height: 60vh;
+    width: 25vw;
+    display:flex; 
+    justify-content: center;
+}
+.smallBox
+{
+    border:1px solid brown;
+    height: 9vh;
+    width: 4vw;
+    display:flex; 
+    justify-content: center;
+}
+.BookColumn
+{
+    display: flex;
+    flex-direction: row;
+}
+.right
+{
+    border:1px solid blue;
+    width:60%;
+    padding-left: 6vw;
+    padding-top: 7vh;
+    padding-right: 15vw;
+}
+.b1
+{
+    
+    background-color:brown;
+    color:white;
+    width: 48%;
+    border:1px solid white;
+    margin-right: 4px;
+    border-radius: 2px;
+}
+.b2
+{
+    height:6vh;
+    background-color:#333333;
+    color:white;
+    width: 48%;
+    border:1px solid white;
+    border-radius: 2px; 
+}
+.title
+{
+    font-size: xx-large;
+    padding-bottom: 7px;
+}
+.author
+{
+    opacity: 0.5;
+    font-size: medium;
+    padding-bottom: 7px;
+}
+
+.Rating
+{
+    border:1px solid #388E3C;
+    width: auto;
+    height: 18px;
+    background-color:#388E3C ;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    color: #F5F5F5;
+    padding-left:1px;
+    padding-right: 1px;
+}
+.ratingRow
+{
+    display: flex;
+    padding-bottom: 12px;
+
+}
+.rating_count
+{
+    opacity:0.53;
+    padding-left: 20px;
+}
+.review
+{
+    height:30vh;
+    background-color: rgb(213, 213, 213); 
+    padding: 15px 30px 18px 30px;
+}

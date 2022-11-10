@@ -17,4 +17,8 @@ export class HttpService {
     console.log(reqdata);
     return this.httpclient.put(url,reqdata,  token && httpOptions)
   }
+  getService(url:string, token:boolean=false, httpOptions:any)
+  {
+    return this.httpclient.get(url,  token && httpOptions)
+  }
 }

@@ -1,13 +1,15 @@
 .outerDiv
 {
+    display: flex;
+    flex-direction: column;
     background: rgb(255, 255, 255);
     font-family:sans-serif;
     // border: 1px solid red;
     margin: -7px;
-    padding: 0px;
-   // border:1px solid green;
-    height:99vh;
+    width: 100.4%;
+     //height:100%;
 }
+
 .header
 {
     display: flex;
@@ -16,17 +18,14 @@
     align-items: center;
     font-family:sans-serif;
     width:100%;
-    height:8%;
+    height:10%;
     background-color:#A03037;
 }
 .bottomDiv
 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 90%;
-   // border:1px solid yellow;
-}
+   height: 80%;
+   width:100%;
+  }
 .IMg
 {
     padding-left: 200px;
@@ -58,6 +57,7 @@
 }
 .Profile
 {
+
     padding-left: 200px;
-    border:1px solid green;
+    //border:1px solid green;
 }
