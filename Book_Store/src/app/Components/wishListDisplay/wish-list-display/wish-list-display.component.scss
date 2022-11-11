@@ -1,0 +1,39 @@
+.outer
+{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 1px solid #E4E4E4;
+    width: 72vw;
+    height: 20vh;
+    padding: 37px;
+}
+.right
+{
+    display: flex;
+    align-items: center;
+}
+.left
+{
+    display: flex;
+    flex-direction: row;
+    width:95%;
+}
+.BookImg
+{
+    width:15%;
+}
+.title
+{
+    font-size: x-large;
+    padding-bottom: 5px;
+}
+.button
+{
+    background-color: white;
+    border: none;
+    :hover
+    {
+        background-color: #eae7e7;
+    }
+}

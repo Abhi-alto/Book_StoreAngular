@@ -2,6 +2,7 @@ import { Component, Inject, OnInit } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { BookService } from 'src/app/Services/bookService/book.service';
 import { SharedService } from 'src/app/Services/sharedService/shared.service';
+import { WishListService } from 'src/app/Services/wishListService/wish-list.service';
 @Component({
   selector: 'app-get-book',
   templateUrl: './get-book.component.html',
@@ -10,7 +11,7 @@ import { SharedService } from 'src/app/Services/sharedService/shared.service';
 export class GetBookComponent implements OnInit {
   Book: any;
   messageBook: any;
-  constructor(private book: BookService,private share:SharedService) { }
+  constructor(private book: BookService,private wishList:WishListService,private share:SharedService) { }
 
   ngOnInit(): void {
     this.messageBook=this.share.getMessage();
@@ -23,5 +24,15 @@ export class GetBookComponent implements OnInit {
       this.book.getBook(this.messageBook.id).subscribe((res: any) => {
         console.log(res);
     })
+  }
+  AddtoWishList()
+  {
+    let data=
+      {
+        id:this.messageBook.id,
+        bookId:this.messageBook.bookId
+      }
+    console.log("Add to wisgh list process starts");
+    this.wishList.AddInWishList(data);
   }
 }

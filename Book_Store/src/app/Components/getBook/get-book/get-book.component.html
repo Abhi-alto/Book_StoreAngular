@@ -11,7 +11,7 @@
                 </span>
                 <div style="padding-top:15px;display:flex;">
                     <button mat-raised-button class="b1">Add To Bag</button>
-                    <button mat-raised-button class="b2">Wish List</button>
+                    <button mat-raised-button class="b2" (click)="AddtoWishList()">Wish List</button>
                 </div>
             </div>
         </div>
@@ -35,17 +35,37 @@
         </div>
         <hr>
         <div style="padding-top:10px;padding-bottom:10px">
-        <span style="font-size: medium; opacity:0.5;">Book Details</span>
-        <div style="font-size: smaller; opacity:0.5;">{{messageBook.bookDescription}}</div>
-    </div>
+            <li><span style="font-size: medium; opacity:0.5;">Book Details</span></li>
+            <div style="font-size: smaller; opacity:0.5;">{{messageBook.bookDescription}}</div>
+        </div>
         <hr>
 
-        <div style="font-size:larger">Customer Feedback</div>
+        <div style="font-size:larger; padding-bottom: 15px;">Customer Feedback</div>
         <div class="review">
-            <div>Overall Rating</div>
-            <div>Stars</div>
-            <div>review</div>
-            <div>Submit</div>
+            <div style="font-size:smaller;padding-bottom: 11px; ">Overall Rating</div>
+            <div style="display:flex ;padding-bottom: 11px;">
+                <button class="StarButton">
+                    <img src="../../../../assets/star_forReview.svg" class="StarImg">
+                </button>
+                <button class="StarButton">
+                    <img src="../../../../assets/star_forReview.svg" class="StarImg">
+                </button>
+                <button class="StarButton">
+                    <img src="../../../../assets/star_forReview.svg" class="StarImg">
+                </button>
+                <button class="StarButton">
+                    <img src="../../../../assets/star_forReview.svg" class="StarImg">
+                </button>
+                <button class="StarButton">
+                    <img src="../../../../assets/star_forReview.svg" class="StarImg">
+                </button>
+            </div>
+            <div>
+                <input type="text" class="ReviewBox" placeholder="Write your review ">
+            </div>
+            <div style="display:flex;justify-content:right; padding-top: 10px;">
+                <button mat-raised-button class="submit">Submit</button>
+            </div>
         </div>
 
     </div>

@@ -7,6 +7,7 @@ import { GetBookComponent } from './Components/getBook/get-book/get-book.compone
 import { LoginComponent } from './Components/login/login.component';
 import { RegisterComponent } from './Components/register/register.component';
 import { ResetPasswordComponent } from './Components/resetPassword/reset-password/reset-password.component';
+import { WishListComponent } from './Components/wishList/wish-list/wish-list.component';
 
 const routes: Routes = [
   {path:"signup",component:RegisterComponent},
@@ -16,7 +17,8 @@ const routes: Routes = [
   {path:"dashboard",component:DashboardComponent,
     children:[
       {path:"books",component:GetAllbooksComponent},
-      {path:"getBook",component:GetBookComponent}
+      {path:"getBook",component:GetBookComponent},
+      {path:"WishList",component:WishListComponent}
     ]
   }
 ];

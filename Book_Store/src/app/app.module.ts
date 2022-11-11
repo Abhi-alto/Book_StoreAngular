@@ -18,6 +18,8 @@ import { GetAllbooksComponent } from './Components/get-allbooks/get-allbooks.com
 import { GetBookComponent } from './Components/getBook/get-book/get-book.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
+import { WishListDisplayComponent } from './Components/wishListDisplay/wish-list-display/wish-list-display.component';
+import { WishListComponent } from './Components/wishList/wish-list/wish-list.component';
 //import {MatButtonModule, MatCheckboxModule, MatToolbarModule, MatListModule, MatMenuModule} from '@angular/material';
 
 
@@ -31,7 +33,9 @@ import { MatIconModule } from '@angular/material/icon';
     DashboardComponent,
     DisplayBookComponent,
     GetAllbooksComponent,
-    GetBookComponent
+    GetBookComponent,
+    WishListDisplayComponent,
+    WishListComponent
   ],
   imports: [
     BrowserModule,

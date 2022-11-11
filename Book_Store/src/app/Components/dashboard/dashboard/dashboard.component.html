@@ -18,7 +18,9 @@
                 <p style="margin: -3px;height: 0px;padding-bottom: 10px;">Profile</p>
             </button>
             <mat-menu #menu="matMenu" xPosition="after">
+                <button mat-menu-item>Profile</button>
                 <button mat-menu-item>Orders</button>
+                <button mat-menu-item (click)="Wish()">Wish List</button>
                 <button mat-menu-item>Logout</button>
             </mat-menu>
         </div>

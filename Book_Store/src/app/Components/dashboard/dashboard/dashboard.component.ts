@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { GetAllbooksComponent } from '../../get-allbooks/get-allbooks.component'; 
+import { WishListComponent } from '../../wishList/wish-list/wish-list.component';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,11 +10,14 @@ import { GetAllbooksComponent } from '../../get-allbooks/get-allbooks.component'
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  constructor( private router: Router) { }
 
   ngOnInit(): void {
     
-    
+  }
+  Wish()
+  {
+    this.router.navigate(["/dashboard/WishList"]);
   }
 
 }

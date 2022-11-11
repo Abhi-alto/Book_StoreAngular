@@ -1,6 +1,6 @@
 .outer
 {
-    border:1px solid rgb(128, 0, 0);
+   // border:1px solid rgb(128, 0, 0);
     height: 100%;
     display: flex;
 }
@@ -8,7 +8,7 @@
 {
     display: flex;
     flex-direction: column;
-    border:1px solid green;
+    //border:1px solid green;
     width:40%;
     padding-left: 13%;
     padding-top:20px;
@@ -37,7 +37,7 @@
 }
 .right
 {
-    border:1px solid blue;
+    //border:1px solid blue;
     width:60%;
     padding-left: 6vw;
     padding-top: 7vh;
@@ -101,7 +101,40 @@
 }
 .review
 {
-    height:30vh;
-    background-color: rgb(213, 213, 213); 
+    height:23vh;
+    background-color:#F5F5F5; 
     padding: 15px 30px 18px 30px;
+}
+.StarButton
+{
+    width:3vw;
+    height: 4vh; 
+     background-color: #F5F5F5; 
+     display: flex;
+    justify-content: left;padding: 0px;
+    border: 0px;
+    
+}
+.StarImg
+{
+    width: 2vw;
+     color:#F5F5F5; 
+     opacity: 0.5px;
+}
+.ReviewBox
+{
+    display: flex;
+    border: none;
+    width: 100%;
+    height:7vh;
+    color: #707070;
+    padding-bottom: 20px;
+}
+.submit
+{
+    display: table-cell;
+    width: 65px;
+    background-color: #3371B5;
+    border-color: #3371B5;
+    color: white;
 }
